@@ -18,7 +18,7 @@ function getMediaList(cb) {
 
     /* 產生signature */
     paramsObject.Signature = encodeURIComponent(sign.generateSignature(paramsObject, accessKeyId.secret + '&'));
-    /* 拼接請求Address */
+    /* 拼接請求網址 */
     let query = [];
     for (var key in paramsObject) {
         query.push(key + '=' + paramsObject[key]);
