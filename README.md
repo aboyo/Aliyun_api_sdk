@@ -7,6 +7,7 @@
 ```javascript
 const sign = require('../aliLib/sign');
 const accessKeyId = require('../aliConfig/accessConfig')
+const request = require('request');
 
 function getMediaList(cb) {
 
